@@ -1,0 +1,4 @@
+FROM ubuntu:22.04
+COPY ./noip-duc_setup.sh /root/
+RUN chmod o+rx /root/noip-duc_setup.sh
+RUN /root/noip-duc_setup.sh
